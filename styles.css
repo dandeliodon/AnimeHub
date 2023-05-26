@@ -110,3 +110,50 @@ footer{
   padding-right: 1%;
   color: white;
 }
+
+
+.contact-form {
+  margin-top: 3rem;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  height: 40px;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  padding: 0.75rem 2rem;
+  background-color: #314755;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #203a43;
+}
