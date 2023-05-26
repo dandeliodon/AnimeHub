@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>AnimeHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Noto+Sans:wght@600&family=Rubik:wght@300;400;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c086993b78.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+
+      <a class="navbar-brand anime-hub" href="#">AnimeHub <i class="fa-solid fa-bookmark"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#rankings"><i class="fa-solid fa-ranking-star"></i> Ranking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#genres">Genres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-list"></i> My Top 10</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact <i class="fa-solid fa-circle-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar ends intro starts  -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 id="heading">Discover new anime.</h1>
+        <p>Explore different genres , find your new favourites and recommend your friends .</p>
+      </div>
+      <div class="col-lg-6">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="one-piece.jpg" class="intro-img">
+            </div>
+            <div class="carousel-item">
+              <img src="demon-slayer.jpg" class="intro-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="jjk.jpg" class="intro-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="dbz.jpg" class="intro-img" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="haikyu.jpg" class="intro-img" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carousel ends -->
+  </div>
+  <!-- end of first container -->
+  <!-- start of rankings -->
+  <section id="rankings">
+    <h1 class="mid-heading">Top Rated Anime On IMDB</h1>
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="false" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="fmab.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">1. Fullmetal Alchemist : Brotherhood</h5>
+                <p class="card-text">Science , Action , Adventure , Fantasy.</p>
+                <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9.1/10</p>
+                <a href="https://www2.kickassanime.ro/anime/fullmetal-alchemist-brotherhood-187615" class="btn btn-dark">Watch Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="legend2.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">2. Legend of the Galactic Heroes</h5>
+                <p class="card-text">Sci-fi , Military , Action.</p>
+                <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9.1/10</p>
+                <a href="https://www2.kickassanime.ro/anime/legend-of-the-galactic-heroes-479299" class="btn btn-dark">Watch Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="aot2.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">3. Attack on Titan</h5>
+                <p class="card-text">Shounen , Fantasy , Action.</p>
+                <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9/10</p>
+                <a href="https://www2.kickassanime.ro/anime/shingeki-no-kyojin-season-1-509998" class="btn btn-dark">Watch Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of 3 cards -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of carousel item1 -->
+      <div class="carousel-item c-item">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="hxh.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">4. HunterxHunter</h5>
+                <p class="card-text">Comedy , Action , Adventure , Fantasy.</p>
+                <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9/10</p>
+                <a href="https://www2.kickassanime.ro/anime/hunter-x-hunter-2011-994660" class="btn btn-dark">Watch Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="deathnote.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">5. Death Note</h5>
+                <p class="card-text">Psychological , Supernatural , Mystery.</p>
+                <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9/10</p>
+                <a href="https://www2.kickassanime.ro/anime/death-note-241589" class="btn btn-dark">Watch Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="one-piece.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">6. One Piece</h5>
+                <p class="card-text">Adventure , Comedy , Action.</p>
+                <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 8.9/10</p>
+                <a href="https://www2.kickassanime.ro/anime/one-piece-779470" class="btn btn-dark">Watch Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of 3 cards -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of carousel item2 -->
+      <div class="carousel-item c-item">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="silver-fang.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">7. Silver Fang</h5>
+                <p class="card-text">Action , Adventure , Fantasy.</p>
+                <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 8.9/10</p>
+                <a href="#" class="btn btn-dark">Watch Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="cowboy.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">8. Cowboy Bepop</h5>
+                <p class="card-text">Space , Action , Comedy.</p>
+                <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 8.9/10</p>
+                <a href="https://www2.kickassanime.ro/anime/cowboy-bebop-140181" class="btn btn-dark">Watch Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="fighting.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">9. Fighting Spirit</h5>
+                <p class="card-text">Boxing , Comedy , Drama.</p>
+                <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 8.8/10</p>
+                <a href="#" class="btn btn-dark">Watch Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of 3 cards -->
+        </div>
+        <!-- end of row -->
+
+      </div>
+      <!-- end of carousel item3 -->
+    </div>
+    <!-- end of carousel inner -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- end of carousel main tag   -->
+</section>
+<!-- end of rankings -->
+<!-- start of genres -->
+<section id="genres">
+  <h1 class="mid-heading2">Genres</h1>
+<div id="carouselExampleControls2" class="carousel slide" data-bs-ride="false" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="fmab.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">1. Fullmetal Alchemist : Brotherhood</h5>
+              <p class="card-text">Science , Action , Adventure , Fantasy.</p>
+              <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9.1/10</p>
+              <a href="https://www2.kickassanime.ro/anime/fullmetal-alchemist-brotherhood-187615" class="btn btn-dark">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="legend2.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">2. Legend of the Galactic Heroes</h5>
+              <p class="card-text">Sci-fi , Military , Action.</p>
+              <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9.1/10</p>
+              <a href="https://www2.kickassanime.ro/anime/legend-of-the-galactic-heroes-479299" class="btn btn-dark">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="aot2.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">3. Attack on Titan</h5>
+              <p class="card-text">Shounen , Fantasy , Action.</p>
+              <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9/10</p>
+              <a href="https://www2.kickassanime.ro/anime/shingeki-no-kyojin-season-1-509998" class="btn btn-dark">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of 3 cards -->
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of carousel item1 -->
+    <div class="carousel-item c-item">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="hxh.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">4. HunterxHunter</h5>
+              <p class="card-text">Comedy , Action , Adventure , Fantasy.</p>
+              <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9/10</p>
+              <a href="https://www2.kickassanime.ro/anime/hunter-x-hunter-2011-994660" class="btn btn-dark">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="deathnote.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">5. Death Note</h5>
+              <p class="card-text">Psychological , Supernatural , Mystery.</p>
+              <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 9/10</p>
+              <a href="https://www2.kickassanime.ro/anime/death-note-241589" class="btn btn-dark">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="one-piece.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">6. One Piece</h5>
+              <p class="card-text">Adventure , Comedy , Action.</p>
+              <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 8.9/10</p>
+              <a href="https://www2.kickassanime.ro/anime/one-piece-779470" class="btn btn-dark">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of 3 cards -->
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of carousel item2 -->
+    <div class="carousel-item c-item">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="silver-fang.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">7. Silver Fang</h5>
+              <p class="card-text">Action , Adventure , Fantasy.</p>
+              <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 8.9/10</p>
+              <a href="#" class="btn btn-dark">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="cowboy.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">8. Cowboy Bepop</h5>
+              <p class="card-text">Space , Action , Comedy.</p>
+              <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 8.9/10</p>
+              <a href="https://www2.kickassanime.ro/anime/cowboy-bebop-140181" class="btn btn-dark">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="fighting.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">9. Fighting Spirit</h5>
+              <p class="card-text">Boxing , Comedy , Drama.</p>
+              <p class="card-text"><i class="fa-brands fa-imdb fa-2xl"></i> 8.8/10</p>
+              <a href="#" class="btn btn-dark">Watch Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of 3 cards -->
+      </div>
+      <!-- end of row -->
+
+    </div>
+    <!-- end of carousel item3 -->
+  </div>
+  <!-- end of carousel inner -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- end of carousel main tag   -->
+</section>
+</body>
+
+</html>

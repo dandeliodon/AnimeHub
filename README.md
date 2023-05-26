@@ -1,2 +1,1 @@
-# AnimeHub
-place for all anime lovers
+# Animehub2
