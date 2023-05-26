@@ -66,58 +66,62 @@ $(document).ready(function(){
   });
   
 
-  // Selectors and Methods
-const form = document.querySelector("form");
-const submitButton = document.querySelector("button[type='submit']");
+// Selectors and Methods
+const genresLink = document.querySelector("a[href='genres.html']");
+const rankingLink = document.querySelector("a[href='ranking.html']");
+const contactLink = document.querySelector("a[href='contact.html']");
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarCollapse = document.querySelector(".navbar-collapse");
 
 // Event Listeners
-submitButton.addEventListener("click", function(event) {
+genresLink.addEventListener("click", function(event) {
   event.preventDefault();
-  // Perform form validation and data processing here
-
-  // Show the alert
-  alert("Message sent!");
+  console.log("Genres link clicked");
 });
 
-form.addEventListener("mouseover", function() {
-  console.log("Mouse over form");
+rankingLink.addEventListener("mouseover", function() {
+  console.log("Mouse over ranking link");
 });
 
-document.addEventListener("keypress", function(event) {
-  console.log("Key pressed:", event.key);
+contactLink.addEventListener("keypress", function(event) {
+  console.log("Key pressed on contact link:", event.key);
+});
+
+navbarToggler.addEventListener("click", function() {
+  navbarCollapse.classList.toggle("show");
 });
 
 // Animation
-const introImg = document.querySelector(".intro-img");
-let rotationAngle = 0;
+function animateIntro() {
+  const introImg = document.querySelector(".intro-img");
+  let rotation = 0;
+  const animationInterval = setInterval(function() {
+    rotation += 1;
+    introImg.style.transform = `rotate(${rotation}deg)`;
+  }, 10);
 
-function rotateImage() {
-  rotationAngle += 5;
-  introImg.style.transform = `rotate(${rotationAngle}deg)`;
-
-  if (rotationAngle < 360) {
-    requestAnimationFrame(rotateImage);
-  }
+  setTimeout(function() {
+    clearInterval(animationInterval);
+  }, 1000);
 }
 
-introImg.addEventListener("click", function() {
-  rotationAngle = 0;
-  rotateImage();
-});
+animateIntro();
 
 // Background Music
 const audio = new Audio("background_music.mp3");
+audio.loop = true;
 const audioButton = document.createElement("button");
 audioButton.textContent = "Mute";
 audioButton.addEventListener("click", function() {
-  if (audio.muted) {
-    audio.muted = false;
+  if (audio.paused) {
+    audio.play();
     audioButton.textContent = "Mute";
   } else {
-    audio.muted = true;
+    audio.pause();
     audioButton.textContent = "Unmute";
   }
 });
 
 const footer = document.getElementById("footer");
 footer.appendChild(audioButton);
+
