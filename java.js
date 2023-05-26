@@ -65,3 +65,59 @@ $(document).ready(function(){
       });
   });
   
+
+  // Selectors and Methods
+const form = document.querySelector("form");
+const submitButton = document.querySelector("button[type='submit']");
+
+// Event Listeners
+submitButton.addEventListener("click", function(event) {
+  event.preventDefault();
+  // Perform form validation and data processing here
+
+  // Show the alert
+  alert("Message sent!");
+});
+
+form.addEventListener("mouseover", function() {
+  console.log("Mouse over form");
+});
+
+document.addEventListener("keypress", function(event) {
+  console.log("Key pressed:", event.key);
+});
+
+// Animation
+const introImg = document.querySelector(".intro-img");
+let rotationAngle = 0;
+
+function rotateImage() {
+  rotationAngle += 5;
+  introImg.style.transform = `rotate(${rotationAngle}deg)`;
+
+  if (rotationAngle < 360) {
+    requestAnimationFrame(rotateImage);
+  }
+}
+
+introImg.addEventListener("click", function() {
+  rotationAngle = 0;
+  rotateImage();
+});
+
+// Background Music
+const audio = new Audio("background_music.mp3");
+const audioButton = document.createElement("button");
+audioButton.textContent = "Mute";
+audioButton.addEventListener("click", function() {
+  if (audio.muted) {
+    audio.muted = false;
+    audioButton.textContent = "Mute";
+  } else {
+    audio.muted = true;
+    audioButton.textContent = "Unmute";
+  }
+});
+
+const footer = document.getElementById("footer");
+footer.appendChild(audioButton);
