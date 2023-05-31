@@ -1,0 +1,194 @@
+.container-fluid {
+    padding: 2% 15% 3%;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+  }
+  
+  .navbar {
+    padding-bottom: 2.5rem;
+  }
+  
+  .nav-item {
+    padding-left: 2.5rem;
+  }
+  
+  .nav-link {
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  .anime-hub {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  
+  .intro-img {
+    width: 375px;
+    height: 550px;
+    border-radius: 25px;
+  }
+  
+  h1#heading {
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding-bottom: 8%;
+    padding-top: 20%;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .carousel-item {
+    padding-left: 4.5rem;
+  }
+  
+  h1.black-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #314755;
+    padding: 3% 15%;
+  }
+  
+  .c-item {
+    width: 83%;
+    height: 50%;
+    padding-left: 17%;
+    padding-bottom: 3%;
+  }
+  
+  .blue-container {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+  }
+  
+  h1.white-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    padding: 3% 15%;
+    color: white;
+  }
+  
+  h2.white-h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 0 0 2% 10%;
+  }
+  
+  .blue-card {
+    background-color: black;
+  }
+  
+  .card-body {
+    color: #314755;
+  }
+  
+  .top5-container {
+    padding: 0% 15% 3%;
+  }
+  
+  .top-card {
+    background-color: #314755;
+    color: white;
+  }
+  
+  footer {
+    padding: 7% 15%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: white;
+  }
+  
+  .f-icon {
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+  }
+  
+  .contact-form {
+    margin-top: 3rem;
+  }
+  
+  .contact-form h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .highlight {
+    background-color: yellow;
+  }
+  
+  /* Event Listeners Example */
+  #mouseArea {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+  }
+  
+  /* JavaScript Animation Example */
+  #animatedElement {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  
+  /* Background Music Example */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #muteButton {
+    padding: 0.75rem 2rem;
+    background-color: #314755;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #muteButton:hover {
+    background-color: #203a43;
+  }
+  
+  /* Footer */
+  #footer {
+    padding: 7% 15%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: white;
+  }
+  
+  .f-icon {
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+  }
