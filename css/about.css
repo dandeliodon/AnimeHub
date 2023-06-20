@@ -1,0 +1,60 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    color: #fff;
+    background: #1e1e1e;
+}
+a{
+    color: #fff;
+}
+a:hover{
+    color: #00FF9C;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+  }
+  .tel{
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: auto;
+  }
+  .nav{
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .menu li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 25px;
+    color: #fff;
+  }
+  .logo{
+    margin-right: 250px;
+  }
+li a:hover{
+    color: #00FF9C;
+}
+
+.menu{
+    margin-top: 20px;
+}
+.card {
+    margin-top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: black;
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  h4{
+    margin-top: 30px;
+  }

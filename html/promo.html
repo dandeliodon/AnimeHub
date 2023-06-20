@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Акции Novella</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/promo.css">
+</head>
+<body>
+    <div id="bg" class="align-items-center justify-content-center">
+        <h2 id="discount" class="text-center" style="margin-top: 30px; display: none;">Ваша скидка: </h2>
+    </div>
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../about.html">О нас</a>
+            <a href="./catalog.html">Цены</a>
+            <a href="#">Акции</a>
+            <a href="./game.html">Игра</a>
+          </div>
+        <div id="pop-up-form" class="container pop-up-frm align-items-center justify-content-center">
+            <div class="product" id="pd1" style="margin-left: 250px;">
+                <img src="../img/product1.png" alt="Product 1">
+                <h2 id="prd-ttl1" class="product-title">Двухэтажный деревянный дом</h2>
+                <p class="product-descr">Имеется: Кухня, Туалет, Кровати (2), Мангал, Гриль, Телевизор, Аудиоколонки</p>
+                <p class="product-price">$200/день</p>
+                <button onclick="choose(this)" id="btn1" class="product-btn">ЗАБРОНИРОВАТЬ</button></a>
+              </div>
+        
+              <div class="product" id="pd2">
+                <img src="../img/product2.png" alt="Product 2">
+                <h2 id="prd-ttl2" class="product-title">1.5 этажный деревянный дом</h2>
+                <p class="product-descr">Имеется: Кухня, Туалет, Кровати (1), Мангал, Гриль, Телевизор</p>
+                <p class="product-price" style="margin-top: 45px;">$175/день</p>
+                <button onclick="choose(this)" id="btn2" class="product-btn">ЗАБРОНИРОВАТЬ</button>
+              </div>
+        
+              <div class="product" id="pd3">
+                <img src="../img/product3.png" alt="Product 3">
+                <h2 id="prd-ttl3" class="product-title">Одноэтажный деревянный дом</h2>
+                <p class="product-descr">Имеется: Кухня, Туалет, Кровати (1),Гриль, Телевизор</p>
+                <p class="product-price" style="margin-top: 45px;">$150/день</p>
+                <button onclick="choose(this)" id="btn3" class="product-btn" id="prod3">ЗАБРОНИРОВАТЬ</button>
+              </div>
+        
+              <div class="product" id="pd4">
+                <img src="../img/product4.png" alt="Product 4">
+                <h2 id="prd-ttl4" class="product-title">Дом “Пирамида” в лесу</h2>
+                <p class="product-descr">Имеется: Кухня, Туалет, Кровати (2), Мангал, Гриль, Телевизор, Аудиоколонки</p>
+                <p class="product-price">$200/день</p>
+                <button onclick="choose(this)" id="btn4" class="product-btn">ЗАБРОНИРОВАТЬ</button>
+              </div>
+        
+              <div class="product" id="pd5">
+                <img src="../img/product5.png" alt="Product 5">
+                <h2 id="prd-ttl5" class="product-title">Большой двухэтажный дом</h2>
+                <p class="product-descr">Имеется: Кухня, Туалет, Кровати (3), Мангал, Гриль, Телевизор</p>
+                <p class="product-price" style="margin-top: 45px;">$225/день</p>
+                <button onclick="choose(this)" id="btn5" class="product-btn">ЗАБРОНИРОВАТЬ</button>
+              </div>
+              <div class="product" id="pd6">
+                <img src="../img/product6.png" alt="Product 6">
+                <h2 id="prd-ttl6" class="product-title">Домик на дереве</h2>
+                <p class="product-descr">Имеется: Кровати (1),Гриль, Мангал</p>
+                <p class="product-price" style="margin-top: 90px;">$125/день</p>
+                <button onclick="choose(this)" id="btn6" class="product-btn">ЗАБРОНИРОВАТЬ</button>
+              </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between" style="margin-top: 20px; margin-bottom: 40px;">
+                <div class="col-2">
+                    <a href="../index.html" class="logo">Novella</a>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-2">
+                    <span style="font-size:30px;cursor:pointer; color: #00FF9C" onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row promo1 d-block" style="margin-bottom: 30px;">
+                <h2 class="col-5">
+                    Акция при аренде 2 и более домов!
+                </h2>
+                <p class="col-5">
+                    При аренде больше 2х домов, вы получаете в подарок скидку в 15% на всю еду в меню нашего ресторана!
+                </p>
+                <div class="col-3">
+                    <button id="div1" class="btn btn-primary">Подобрать номер</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div id="div2" class="promo2">
+                        <h2 class="col-3">Скидки молодоженам!</h2>
+                        <p style="width: 300px; padding-bottom: 20px;">Мы дарим молодоженам скидку в 10%!</p>
+                    </div>
+                </div>
+                <div class="col-6" style="margin-left: auto; padding-right: 0;">
+                    <div id="div3" class="promo3">
+                        <h2 style="width: 400px;">Скидки большим семьям!</h2>
+                        <p style="width: 300px; padding-bottom: 20px;">Семьи с 4 и более детьми получают 10% скидку!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="div4" class="row promo4 d-block" style="margin-bottom: 30px; margin-top: 30px;">
+                <h2 class="col-5">
+                    Скидки нашим постоянным клиентам!
+                </h2>
+                <p class="col-5">
+                    При аренде больше 2х домов, вы получаете в подарок скидку в 15% на всю еду в меню нашего ресторана!
+                </p>
+                <div class="col-3">
+                    <button onclick="showHome()" id="div2" class="btn btn-primary">Подобрать номер</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-container d-flex">
+          <div class="footer-left">
+            <a href="..\index.html"><img src="img/logo.svg" alt="Novella" class="logo footer-logo"></a>
+            <span class="footer-copyright">Novella 2014-2023 Все права защищены </span>
+          </div>
+          <div class="footer-right">
+            <div class="footer-wrapper d-flex">
+              <ul class="list-reset footer-list">
+                <li class="footer-list-item"><a href="../index.html" class="footer-link">Главная</a></li>
+                <li class="footer-list-item"><a href="../index.html#1" class="footer-link">О нас</a></li>
+                <li class="footer-list-item"><a href="../index.html#2" class="footer-link">Услуги</a></li>
+              </ul>
+              <a href="#" class="footer-link-extra">Каталог</a>
+              <ul class="list-reset footer-list">
+                <li class="footer-list-item"><a href="#" class="footer-link">Акций</a></li>
+                <li class="footer-list-item"><a href="#" class="footer-link">Семейные</a></li>
+                <li class="footer-list-item"><a href="#" class="footer-link">Молодоженам</a></li>
+                <li class="footer-list-item"><a href="#" class="footer-link">Крестики нолики</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="../js/promo.js"></script>
+</body>
+</html>
