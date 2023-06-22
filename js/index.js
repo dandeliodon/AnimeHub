@@ -161,3 +161,34 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+// Get the product buttons
+const buttons = document.querySelectorAll('.product-btn');
+
+// Add event listeners to the buttons
+buttons.forEach(button => {
+  button.addEventListener('click', handleClick);
+  button.addEventListener('mouseover', handleMouseOver);
+  button.addEventListener('keypress', handleKeyPress);
+});
+
+// Event handlers
+function handleClick(event) {
+  // Handle the click event
+  console.log('Button clicked');
+  console.log('Button ID:', event.target.id);
+}
+
+function handleMouseOver(event) {
+  // Handle the mouseover event
+  console.log('Button mouseover');
+  console.log('Button ID:', event.target.id);
+}
+
+function handleKeyPress(event) {
+  // Handle the keypress event
+  console.log('Button keypress');
+  console.log('Button ID:', event.target.id);
+}
