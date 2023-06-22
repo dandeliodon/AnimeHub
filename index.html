@@ -30,6 +30,13 @@
                     <input type="tel" name="tel" placeholder="Ваш телефон">
                     <input type="submit" class="btn btn-primary form-btn" value="Подобрать номер">
                 </form>
+                <button onclick="openPDF()">Open PDF</button>
+
+  <script>
+    function openPDF() {
+      window.open('path/to/your/file.pdf', '_blank');
+    }
+  </script>
             </div>
         </div>
         <div id="rs-menu" class="menu-none">
@@ -132,7 +139,7 @@
             </div>
             <div class="d-flex gallery">
                 <div id="gal1" class="col-4 gal-card col-md-4">
-                    <img class="gal1-i gal1-logo" src="./img/logo.svg" alt="">
+                    <img class="gal1-i gal1-logo" src="../img/logo.png" alt="">
                     <h3 class="gal1-i g1-h3">Все самое лучшее с вами</h3>
                     <p class="gal1-i gal-p">
                         Все услуги входят в стоимость проживания для всех гостей
@@ -232,11 +239,47 @@
                         <h4 class="h4 text-center">Заполните форму</h4>
                         <p class="form-text text-center">Мы позвоним в течении 5 минут и проконсультируем вас!</p>
                         <div class="d-flex justify-content-center">
-                            <form id="frm2" action="" class="frm">
-                                <input type="text" name="name" placeholder="Ваше Имя">
-                                <input type="tel" name="tel" placeholder="Ваш телефон">
-                                <input type="submit" class="btn btn-primary form-btn" value="Подобрать номер">
-                            </form>
+                            <script>
+                                // Get the current year
+                                var currentYear = new Date().getFullYear();
+                            
+                                // Set the minimum and maximum values for the calendar input
+                                var minDate = currentYear + "-01-01";
+                                var maxDate = currentYear + "-12-31";
+                            
+                                // Set the attributes for the calendar input
+                                window.onload = function() {
+                                  var calendarInput = document.getElementById("calendar");
+                                  calendarInput.setAttribute("min", minDate);
+                                  calendarInput.setAttribute("max", maxDate);
+                                };
+                              </script>
+                            </head>
+                            <body>
+                              <form>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+                                
+                                <label for="phone">Phone:</label>
+                                <input type="tel" id="phone" name="phone" required><br><br>
+                                
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required><br><br>
+                                
+                                <label for="calendar">Date:</label>
+                                <input type="date" id="calendar" name="calendar" required><br><br>
+                                
+                                <label for="dropdown">Ваш пол:</label>
+                                <select id="dropdown" name="dropdown">
+                                  <option value="option1">Мужской</option>
+                                  <option value="option2">Женский</option>
+                                </select><br><br>
+                                
+                                <input type="checkbox" id="checkbox" name="checkbox">
+                                <label for="checkbox">Вы согласны на обработку ваших данных</label><br><br>
+                                
+                                <input type="submit" value="Submit">
+                              </form>
                         </div>
                     </div>
                 </div>
@@ -244,7 +287,7 @@
             <div class="row d-flex align-items-center" style="margin-top: 60px;">
                 <div class="col-2 d-flex">
                     <a href="">
-                        <img src="./img/logo.svg" alt="">
+                        <img src="../img/logo.png" alt="">
                     </a>
                 </div>
                 <div class="col-8 col-md-7 navbar d-flex justify-content-center">
